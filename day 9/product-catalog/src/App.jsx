@@ -99,6 +99,9 @@ function App() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [sort, setSort] = useState("");
+  const [wishlist, setWishlist] = useState([]);
+  const [cart, setCart] = useState([]);
+  const [page, setPage] = useState("products");
 
   let filteredProducts = products.filter((product) => {
     const matchName = product.name.toLowerCase().includes(search.toLowerCase());
@@ -115,10 +118,41 @@ function App() {
   if (sort === "high") {
     filteredProducts.sort((a, b) => b.discountPrice - a.discountPrice);
   }
+  const addToWishlist = (product) => {
+    const exists = wishlist.find((item) => item.id === product.id);
+
+    if (!exists) {
+      setWishlist([...wishlist, product]);
+    }
+  };
+
+  const addToCart = (product) => {
+    const exists = cart.find((item) => item.id === product.id);
+
+    if (!exists) {
+      setCart([...cart, product]);
+    }
+  };
+
+  const displayProducts =
+    page === "products"
+      ? filteredProducts
+      : page === "wishlist"
+        ? wishlist
+        : cart;
 
   return (
     <div className="app">
       <h1>🛍 Product Catalog</h1>
+      <div className="menu">
+        <button onClick={() => setPage("products")}>Products</button>
+
+        <button onClick={() => setPage("wishlist")}>
+          ❤️ Wishlist ({wishlist.length})
+        </button>
+
+        <button onClick={() => setPage("cart")}>🛒 Cart ({cart.length})</button>
+      </div>
 
       <div className="controls">
         <input
@@ -145,7 +179,7 @@ function App() {
       </div>
 
       <div className="product-grid">
-        {filteredProducts.map((product) => (
+        {displayProducts.map((product) => (
           <div className="card" key={product.id}>
             <span className="badge">{product.badge}</span>
 
@@ -184,8 +218,10 @@ function App() {
             </p>
 
             <div className="buttons">
-              <button>❤️ Wishlist</button>
-              <button>Add to Cart 🛒</button>
+              <button onClick={() => addToWishlist(product)}>
+                ❤️ Wishlist
+              </button>
+              <button onClick={() => addToCart(product)}>Add to Cart 🛒</button>
             </div>
           </div>
         ))}
