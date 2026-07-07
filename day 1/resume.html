@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Resume</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .resume {
+        width: 70%;
+        margin: auto;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px gray;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(43, 226, 198);
+      }
+
+      h2 {
+        color: rgb(43, 226, 198);
+      }
+
+      h3 {
+        text-align: center;
+        color: gray;
+      }
+
+      hr {
+        width: 100%;
+        border: 1px solid lightgray;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: black;
+      }
+
+      ul {
+        background-color: #eeeeee;
+        padding: 15px;
+        border-radius: 8px;
+
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      li {
+        margin: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      th {
+        background-color: rgb(255, 208, 127);
+        color: white;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+
+      a {
+        width: fit-content;
+        margin: auto;
+        background-color: #1d3557;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      a:hover {
+        background-color: yellowgreen;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        .resume {
+          width: 100%;
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        ul {
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        table {
+          font-size: 12px;
+        }
+
+        th,
+        td {
+          padding: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume">
+      <div class="header">
+        <h1>Lathika S</h1>
+
+        <h3>lathikaselvam25@gmail.com</h3>
+      </div>
+
+      <hr />
+
+      <section>
+        <h2>About Me</h2>
+
+        <p>
+          Hello! I am Lathika, a B.Tech Information Technology student at
+          Hindusthan Institute of Technology. I am passionate about programming
+          and web development. I have knowledge of Java, Python, HTML, and Data
+          Structures. I am continuously improving my technical skills and
+          preparing for placement opportunities. My goal is to build a
+          successful career in the IT industry and contribute to innovative
+          software solutions.
+        </p>
+      </section>
+
+      <section>
+        <h2><i>Skills</i></h2>
+
+        <ul type="square">
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>Data Structures</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><u>Education</u></h2>
+
+        <table>
+          <tr>
+            <th colspan="3">Educational Details</th>
+          </tr>
+
+          <tr>
+            <th>S.No</th>
+            <th>Name of the School</th>
+            <th>Year of Passing</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>HSR School</td>
+            <td>2024</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Hindusthan Institute of Technology</td>
+            <td>2026</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <ul>
+          <li><b>Student Registration Form</b> - Created using HTML and CSS</li>
+
+          <li>
+            <b>Login Page</b> - Designed a login interface using HTML and CSS
+          </li>
+
+          <li><b>Resume Website</b> - Developed personal portfolio webpage</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact Details</h2>
+
+        <p>
+          <b>Phone:</b> +91 9360411850 <br />
+
+          <b>Email:</b> lathikaselvam25@gmail.com <br />
+
+          <b>Address:</b> Coimbatore, Tamil Nadu
+        </p>
+      </section>
+
+      <section>
+        <h2>LinkedIn Profile</h2>
+
+        <p>
+          <a href="https://www.linkedin.com/" target="_blank"> LinkedIn </a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Achievements</h2>
+
+        <ul>
+          <li>Full Stack Development Internship</li>
+
+          <li>Web Development Practice Projects</li>
+
+          <li>Programming Skills Improvement</li>
+        </ul>
+      </section>
+
+      <a href="https://leetcode.com/u/Lathika" target="_blank"> Leetcode </a>
+    </div>
+  </body>
+</html>

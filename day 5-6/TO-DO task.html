@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional To-Do App</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe,#43e97b);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:450px;
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.input-area{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    font-size:16px;
+    border:2px solid #0d6efd;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#198754;
+    box-shadow:0 0 10px rgba(25,135,84,.3);
+}
+
+#addBtn{
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 18px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+    font-weight:bold;
+}
+
+#addBtn:hover{
+    background:#084298;
+    transform:scale(1.05);
+}
+
+ul{
+    list-style:none;
+    margin-top:25px;
+}
+
+li{
+    background:#f8f9fa;
+    margin-bottom:12px;
+    padding:14px;
+    border-left:6px solid #0d6efd;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+}
+
+li:hover{
+    transform:translateX(6px);
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
+}
+
+li button{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+li button:hover{
+    background:#bb2d3b;
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:gray;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 id="heading">📝 My To-Do App</h2>
+
+<div class="input-area">
+<input type="text" id="task" placeholder="Enter your task...">
+<button id="addBtn">Add</button>
+</div>
+
+<ul id="taskList"></ul>
+
+<div class="footer">
+Manage your daily tasks efficiently 🚀
+</div>
+
+</div>
+
+<script>
+
+const heading=document.getElementById("heading");
+const taskInput=document.getElementById("task");
+const addButton=document.getElementById("addBtn");
+const taskList=document.getElementById("taskList");
+
+addButton.addEventListener("click",addTask);
+
+heading.addEventListener("mouseover",function(){
+heading.style.color="#198754";
+});
+
+heading.addEventListener("mouseout",function(){
+heading.style.color="#0d6efd";
+});
+
+window.onload=function(){
+
+let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
+
+tasks.forEach(function(task){
+createTask(task);
+});
+
+};
+
+function addTask(){
+
+if(taskInput.value.trim()==""){
+alert("Please enter a task.");
+return;
+}
+
+createTask(taskInput.value);
+
+let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
+
+tasks.push(taskInput.value);
+
+localStorage.setItem("tasks",JSON.stringify(tasks));
+
+taskInput.value="";
+
+}
+
+function createTask(task){
+
+let li=document.createElement("li");
+
+li.innerHTML=task;
+
+let removeBtn=document.createElement("button");
+
+removeBtn.innerHTML="Delete";
+
+removeBtn.addEventListener("click",function(){
+
+li.remove();
+
+let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
+
+tasks=tasks.filter(function(item){
+return item!==task;
+});
+
+localStorage.setItem("tasks",JSON.stringify(tasks));
+
+});
+
+li.appendChild(removeBtn);
+
+taskList.appendChild(li);
+
+}
+
+</script>
+
+</body>
+</html>
+
