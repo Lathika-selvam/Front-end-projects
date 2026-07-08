@@ -19,7 +19,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container container">
-        {/* Brand Info */}
+        
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
             <span className="logo-gradient">Aura</span>Cart
@@ -43,7 +43,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links */}
+       
         <div className="footer-links-grid">
           <div className="footer-col">
             <h4 className="footer-title">Shop</h4>
@@ -70,21 +70,20 @@ export const Footer = () => {
             <ul className="contact-info-list">
               <li>
                 <MapPin size={16} />
-                <span>100 Aura Blvd, San Francisco, CA</span>
+                <span>No.25, Coimbatore, TamilNadu </span>
               </li>
               <li>
                 <Phone size={16} />
-                <span>+1 (555) 019-2834</span>
+                <span>+91 9876543210</span>
               </li>
               <li>
                 <Mail size={16} />
-                <span>support@auracart.com</span>
+                <span> www.auracart.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Newsletter Signup */}
         <div className="footer-newsletter">
           <h4 className="footer-title">Newsletter</h4>
           <p className="newsletter-text">Subscribe to receive updates, access to exclusive deals, and more.</p>
@@ -104,17 +103,6 @@ export const Footer = () => {
           {subscribed && (
             <p className="subscribe-success-msg">Thank you for subscribing! Check your inbox soon.</p>
           )}
-        </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="footer-bottom">
-        <div className="footer-bottom-container container">
-          <p>&copy; {new Date().getFullYear()} AuraCart. All rights reserved.</p>
-          <div className="footer-bottom-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-          </div>
         </div>
       </div>
     </footer>

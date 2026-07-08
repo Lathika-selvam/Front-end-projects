@@ -4,343 +4,382 @@ export const categories = [
   "Home & Kitchen",
   "Beauty",
   "Sports",
-  "Books"
+  "Books",
 ];
-
 export const products = [
-  // --- Electronics ---
   {
     id: "elec-1",
-    name: "AeroSound ANC Headphones",
+    name: "Nova X Pro Smartphone",
     category: "Electronics",
-    description: "Experience absolute audio purity. Equipped with hybrid Active Noise Cancellation, custom 40mm dynamic drivers, and a comfortable memory foam headband, the AeroSound ANC headphones deliver up to 40 hours of rich, immersive listening.",
-    price: 189.99,
-    rating: 4.8,
-    reviewsCount: 124,
-    stock: 15,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    description:
+      "A premium 5G smartphone with a 6.7-inch AMOLED display, 108MP AI camera, Snapdragon processor, and 5000mAh fast-charging battery.",
+    price: 899.99,
+    rating: 4.9,
+    reviewsCount: 245,
+    stock: 18,
+    image:
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Battery Life": "Up to 40 Hours (ANC On)",
-      "Connectivity": "Bluetooth 5.2 & 3.5mm Aux",
-      "Noise Control": "Hybrid Active Noise Cancellation",
-      "Charging": "USB-C Quick Charge (10 mins = 5 hrs)"
+      Display: "6.7-inch AMOLED",
+      Processor: "Snapdragon 8 Gen",
+      Camera: "108MP + 12MP + 8MP",
+      Battery: "5000mAh",
     },
-    featured: true
-  },
-  {
-    id: "elec-2",
-    name: "Chronos Active Smartwatch",
-    category: "Electronics",
-    description: "Track your fitness, track your life. The Chronos Active features an always-on AMOLED display, comprehensive heart-rate and sleep tracking, built-in GPS, and seamless notification syncing with a sleek, water-resistant aluminum bezel.",
-    price: 149.99,
-    rating: 4.5,
-    reviewsCount: 88,
-    stock: 22,
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
-    specs: {
-      "Display": "1.43-inch AMOLED Always-On",
-      "Water Resistance": "5 ATM (Up to 50m)",
-      "Sensors": "Heart Rate, SpO2, Accelerometer, Gyro, GPS",
-      "Battery Life": "Up to 7 Days typical usage"
-    },
-    featured: false
-  },
-  {
-    id: "elec-3",
-    name: "Tactile Pro Mechanical Keyboard",
-    category: "Electronics",
-    description: "Elevate your typing and gaming experience. Outfitted with hot-swappable brown tactile switches, customizable per-key RGB backlighting, and a premium double-shot PBT keycap set, all mounted in a robust aircraft-grade aluminum frame.",
-    price: 109.99,
-    rating: 4.7,
-    reviewsCount: 56,
-    stock: 8,
-    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
-    specs: {
-      "Form Factor": "Tenkeyless (80% layout)",
-      "Switches": "Hot-swappable Tactile Brown",
-      "Backlight": "Dynamic Per-Key RGB",
-      "Interface": "Detachable Braided USB-C"
-    },
-    featured: true
+    featured: true,
   },
 
-  // --- Fashion ---
+  {
+    id: "elec-2",
+    name: "UltraBook Air Laptop",
+    category: "Electronics",
+    description:
+      "Lightweight performance laptop with Intel Core i7 processor, 16GB RAM, 512GB SSD and a stunning Retina display.",
+    price: 1299.99,
+    rating: 4.8,
+    reviewsCount: 188,
+    stock: 10,
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=80",
+    specs: {
+      Processor: "Intel Core i7",
+      RAM: "16GB",
+      Storage: "512GB SSD",
+      Display: "15.6-inch Retina",
+    },
+    featured: true,
+  },
+
+  {
+    id: "elec-3",
+    name: "Pro Gaming Headset",
+    category: "Electronics",
+    description:
+      "Immersive surround sound gaming headset with RGB lighting, noise-cancelling microphone and memory foam ear cushions.",
+    price: 149.99,
+    rating: 4.7,
+    reviewsCount: 132,
+    stock: 20,
+    image:
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80",
+    specs: {
+      Audio: "7.1 Surround Sound",
+      Microphone: "Noise Cancelling",
+      Connection: "USB & 3.5mm",
+      RGB: "Yes",
+    },
+    featured: false,
+  },
+
   {
     id: "fash-1",
-    name: "Classic Maverick Leather Jacket",
+    name: "Premium Denim Jacket",
     category: "Fashion",
-    description: "A timeless icon. Crafted from 100% genuine top-grain lambskin leather, this jacket features premium YKK zippers, a sleek polyester lining, and asymmetrical zip details that add a classic rugged edge to any modern wardrobe.",
-    price: 249.99,
-    rating: 4.9,
-    reviewsCount: 142,
-    stock: 12,
-    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80",
+    description:
+      "Stylish slim-fit denim jacket made with premium cotton fabric for everyday comfort.",
+    price: 89.99,
+    rating: 4.8,
+    reviewsCount: 102,
+    stock: 16,
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Material": "100% Top-Grain Lambskin Leather",
-      "Lining": "100% Breathable Polyester",
-      "Pockets": "3 Exterior Zip, 2 Interior Slip",
-      "Care": "Professional Leather Clean Only"
+      Material: "100% Cotton",
+      Fit: "Slim Fit",
+      Color: "Blue",
+      Wash: "Machine Wash",
     },
-    featured: true
+    featured: true,
   },
+
   {
     id: "fash-2",
-    name: "Urban Knit Sneakers",
+    name: "Running Sports Shoes",
     category: "Fashion",
-    description: "Step into light, airy comfort. These sneakers feature a highly breathable, woven knit upper that conforms to your foot like a sock, combined with a responsive, high-rebound foam midsole for day-long urban exploration.",
-    price: 79.99,
+    description:
+      "Breathable lightweight running shoes with shock-absorbing sole and anti-slip grip.",
+    price: 119.99,
     rating: 4.6,
-    reviewsCount: 94,
-    stock: 25,
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+    reviewsCount: 96,
+    stock: 28,
+    image:
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Upper": "Engineered Breathable Woven Knit",
-      "Midsole": "High-Rebound Responsive Foam",
-      "Weight": "7.8 oz (Size 9)",
-      "Closure": "Elastic slip-on with functional laces"
+      Sole: "Rubber",
+      Weight: "290g",
+      Material: "Mesh",
+      Usage: "Running",
     },
-    featured: false
+    featured: false,
   },
   {
     id: "fash-3",
-    name: "Minimalist Leather Backpack",
+    name: "Classic Travel Backpack",
     category: "Fashion",
-    description: "Sleek utility. A streamlined, weather-resistant leather backpack designed for the modern commuter. Features a padded 15-inch laptop sleeve, hidden security pocket, and padded mesh shoulder straps for absolute comfort.",
-    price: 119.99,
+    description:
+      "Modern travel backpack with a padded laptop compartment, USB charging port, and water-resistant fabric.",
+    price: 74.99,
     rating: 4.7,
-    reviewsCount: 63,
-    stock: 18,
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80",
+    reviewsCount: 118,
+    stock: 22,
+    image:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Dimensions": "17.5\" x 12\" x 5.5\"",
-      "Laptop Pocket": "Padded sleeve fits up to 15.6\"",
-      "Material": "Water-Resistant Premium Vegan Leather",
-      "Hardware": "Matte Black Reinforced Alloy"
+      Capacity: "30L",
+      Material: "Water Resistant Polyester",
+      Laptop: "15.6 inch",
+      Weight: "850g",
     },
-    featured: false
+    featured: false,
   },
 
-  // --- Home & Kitchen ---
   {
     id: "home-1",
-    name: "AeroVortex 5.8QT Air Fryer",
+    name: "Smart Coffee Maker",
     category: "Home & Kitchen",
-    description: "Crispy perfection, healthier cooking. The AeroVortex uses high-speed air circulation technology to cook food with up to 85% less oil than traditional deep frying. Features 8 one-touch cooking presets and a dishwasher-safe nonstick basket.",
-    price: 99.99,
+    description:
+      "Programmable coffee maker with touch controls, timer, and automatic keep-warm function.",
+    price: 129.99,
     rating: 4.8,
-    reviewsCount: 210,
+    reviewsCount: 156,
     stock: 14,
-    image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?auto=format&fit=crop&w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Capacity": "5.8 Quarts / 5.5 Liters",
-      "Power": "1700 Watts",
-      "Temperature Range": "100°F - 400°F",
-      "Presets": "French Fries, Steak, Chicken, Seafood, Bacon, Toast, Bake, Dehydrate"
+      Capacity: "1.5L",
+      Timer: "24 Hours",
+      Power: "1000W",
+      Display: "Digital LED",
     },
-    featured: true
-  },
-  {
-    id: "home-2",
-    name: "Artisan Ceramic Coffee Set",
-    category: "Home & Kitchen",
-    description: "Start your morning with visual art. Handcrafted by local artisans, this minimalist stoneware coffee set includes a premium drip pour-over cone, a 600ml glass carafe, and two matching double-walled cups with a speckled matte glaze.",
-    price: 45.00,
-    rating: 4.7,
-    reviewsCount: 45,
-    stock: 9,
-    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80",
-    specs: {
-      "Includes": "1 Drip Cone, 1 600ml Carafe, 2 Double-Wall Cups",
-      "Material": "High-Fire Speckled Stoneware",
-      "Dishwasher Safe": "Yes",
-      "Microwave Safe": "Yes"
-    },
-    featured: false
-  },
-  {
-    id: "home-3",
-    name: "Minimalist Desktop Humidifier",
-    category: "Home & Kitchen",
-    description: "Breathe easier, sleep better. A whisper-quiet ultrasonic cool-mist humidifier with a compact design that fits perfectly on your nightstand or workspace. Includes an warm ambient night light and auto-shutoff safety feature.",
-    price: 29.99,
-    rating: 4.4,
-    reviewsCount: 112,
-    stock: 30,
-    image: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&q=80",
-    specs: {
-      "Capacity": "500 ml",
-      "Runtime": "Up to 10 Hours (Intermittent Mode)",
-      "Mist Output": "30-50 ml/h",
-      "Power Source": "USB-C Cable"
-    },
-    featured: false
+    featured: true,
   },
 
-  // --- Beauty ---
+  {
+    id: "home-2",
+    name: "Electric Kettle",
+    category: "Home & Kitchen",
+    description:
+      "Fast boiling stainless steel electric kettle with auto shut-off and boil-dry protection.",
+    price: 49.99,
+    rating: 4.6,
+    reviewsCount: 91,
+    stock: 25,
+    image:
+      "https://images.unsplash.com/photo-1517414204284-3c5f7f55f8a8?auto=format&fit=crop&w=600&q=80",
+    specs: {
+      Capacity: "1.8L",
+      Material: "Stainless Steel",
+      Power: "1500W",
+      Safety: "Auto Shut Off",
+    },
+    featured: false,
+  },
+
+  {
+    id: "home-3",
+    name: "Modern LED Table Lamp",
+    category: "Home & Kitchen",
+    description:
+      "Minimalist LED desk lamp with adjustable brightness and touch controls.",
+    price: 39.99,
+    rating: 4.5,
+    reviewsCount: 74,
+    stock: 30,
+    image:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80",
+    specs: {
+      Brightness: "3 Levels",
+      Power: "USB",
+      Color: "Warm White",
+      Control: "Touch",
+    },
+    featured: false,
+  },
+
   {
     id: "beau-1",
-    name: "Organics Glow Face Oil",
+    name: "Vitamin C Face Serum",
     category: "Beauty",
-    description: "Unlock your skin's natural radiance. A luxurious blend of cold-pressed rosehip, jojoba, and argan oils enriched with Vitamin E. Gently repairs skin cells, deeply hydrates, and leaves a silky, non-greasy dewy finish.",
-    price: 34.99,
-    rating: 4.6,
-    reviewsCount: 78,
-    stock: 20,
-    image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80",
+    description:
+      "Brightening serum enriched with Vitamin C and Hyaluronic Acid for glowing skin.",
+    price: 24.99,
+    rating: 4.8,
+    reviewsCount: 203,
+    stock: 28,
+    image:
+      "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Skin Type": "All Skin Types (Sensitive Safe)",
-      "Ingredients": "100% Organic Rosehip Seed, Jojoba, Argan Oils, Vitamin E",
-      "Free From": "Parabens, Sulfates, Artificial Fragrances, Cruelty-free",
-      "Size": "1.0 fl oz / 30 ml"
+      Volume: "30ml",
+      Skin: "All Skin Types",
+      Feature: "Paraben Free",
+      Usage: "Daily",
     },
-    featured: false
+    featured: true,
   },
+
   {
     id: "beau-2",
-    name: "Nocturnal Repair Night Cream",
+    name: "SPF 50 Sunscreen",
     category: "Beauty",
-    description: "Rejuvenating rest. This advanced peptide night cream works overnight to smooth the appearance of fine lines, restore moisture barrier, and plump skin with deep, long-lasting hydration using plant-derived squalane and ceramides.",
-    price: 42.50,
-    rating: 4.8,
-    reviewsCount: 91,
-    stock: 15,
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80",
+    description:
+      "Lightweight sunscreen offering broad-spectrum UV protection with a non-greasy finish.",
+    price: 19.99,
+    rating: 4.7,
+    reviewsCount: 144,
+    stock: 35,
+    image:
+      "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Target Concern": "Anti-Aging, Dryness, Fine Lines",
-      "Key Actives": "Multi-Peptide Complex, Squalane, 3 Essential Ceramides",
-      "Usage": "Apply nightly on clean, dry skin",
-      "Size": "1.7 oz / 50 ml"
+      SPF: "50+",
+      WaterResistant: "Yes",
+      Volume: "50ml",
+      Skin: "Sensitive",
     },
-    featured: true
+    featured: false,
   },
   {
     id: "beau-3",
-    name: "L'Elixir Amber Perfume Spray",
+    name: "Luxury Oud Perfume",
     category: "Beauty",
-    description: "A warm, mysterious aura. L'Elixir blends notes of golden amber, warm vanilla bean, and rich sandalwood, accented with a subtle top note of fresh bergamot. A sophisticated fragrance that lingers beautifully all day.",
-    price: 85.00,
-    rating: 4.7,
-    reviewsCount: 49,
-    stock: 10,
-    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80",
+    description:
+      "Premium long-lasting perfume with rich oud, amber, and floral notes for a luxurious fragrance experience.",
+    price: 79.99,
+    rating: 4.9,
+    reviewsCount: 96,
+    stock: 18,
+    image:
+      "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Fragrance Family": "Warm & Spicy Wood",
-      "Key Notes": "Bergamot, Amber, Vanilla, Sandalwood",
-      "Concentration": "Eau de Parfum (EDP)",
-      "Size": "3.4 fl oz / 100 ml"
+      Volume: "100ml",
+      Type: "Eau De Parfum",
+      Fragrance: "Oud & Amber",
+      Lasting: "12 Hours",
     },
-    featured: false
+    featured: true,
   },
 
-  // --- Sports ---
   {
     id: "spor-1",
-    name: "Balance 8mm Cork Yoga Mat",
+    name: "Adjustable Dumbbell Set",
     category: "Sports",
-    description: "Natural grip, eco-friendly strength. Made from organic Mediterranean oak cork and backing with natural tree rubber, this 8mm thick mat provides exceptional non-slip performance and supportive cushioning for all yoga and hot workout sessions.",
-    price: 59.99,
+    description:
+      "Professional adjustable dumbbell set for home workouts with ergonomic grip and durable steel plates.",
+    price: 199.99,
     rating: 4.9,
-    reviewsCount: 65,
-    stock: 13,
-    image: "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=600&q=80",
+    reviewsCount: 145,
+    stock: 10,
+    image:
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Material": "Natural Oak Cork & Sustainable Tree Rubber",
-      "Dimensions": "72\" Long x 26\" Wide",
-      "Thickness": "8 mm Extra Cushioning",
-      "Weight": "5.5 lbs"
+      Weight: "5kg - 25kg",
+      Material: "Steel",
+      Grip: "Anti-slip",
+      Warranty: "2 Years",
     },
-    featured: false
-  },
-  {
-    id: "spor-2",
-    name: "HydroForge Vacuum Bottle",
-    category: "Sports",
-    description: "Ice-cold hydration. The HydroForge features double-wall vacuum insulation that keeps water ice-cold for up to 24 hours, or piping hot for 12. Built with durable 18/8 food-grade stainless steel and a sweat-proof matte finish.",
-    price: 32.00,
-    rating: 4.7,
-    reviewsCount: 154,
-    stock: 40,
-    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80",
-    specs: {
-      "Capacity": "32 oz / 950 ml",
-      "Material": "18/8 Premium Pro-Grade Stainless Steel",
-      "Insulation": "Double-Wall TempShield Vacuum",
-      "Lid": "Leakproof straw lid + flex cap included"
-    },
-    featured: false
-  },
-  {
-    id: "spor-3",
-    name: "Viper Pro Speed Jump Rope",
-    category: "Sports",
-    description: "Master double-unders. Engineered for high-speed workouts, the Viper Pro features dual ball-bearings in anti-slip aluminum handles, paired with a custom-adjustable steel cable that cuts through the air with zero friction.",
-    price: 19.99,
-    rating: 4.6,
-    reviewsCount: 72,
-    stock: 50,
-    image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80",
-    specs: {
-      "Cable Type": "Adjustable Coated Steel Cable",
-      "Handle Length": "6.2 inches",
-      "Bearing System": "360° Stainless Steel Ball Bearings",
-      "Includes": "Premium jump rope, spare cable, carrying pouch"
-    },
-    featured: false
+    featured: true,
   },
 
-  // --- Books ---
+  {
+    id: "spor-2",
+    name: "Premium Gym Shaker",
+    category: "Sports",
+    description:
+      "Leak-proof protein shaker bottle with mixing ball and BPA-free plastic construction.",
+    price: 18.99,
+    rating: 4.6,
+    reviewsCount: 122,
+    stock: 45,
+    image:
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=80",
+    specs: {
+      Capacity: "700ml",
+      Material: "BPA Free",
+      LeakProof: "Yes",
+      Color: "Black",
+    },
+    featured: false,
+  },
+
+  {
+    id: "spor-3",
+    name: "Resistance Band Kit",
+    category: "Sports",
+    description:
+      "Complete resistance band set with multiple resistance levels for full-body workouts.",
+    price: 34.99,
+    rating: 4.8,
+    reviewsCount: 110,
+    stock: 38,
+    image:
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80",
+    specs: {
+      Bands: "5 Levels",
+      Material: "Natural Latex",
+      Handles: "Foam Grip",
+      CarryBag: "Included",
+    },
+    featured: false,
+  },
+
   {
     id: "book-1",
-    name: "Starlight Voyage: Sci-Fi Epic",
+    name: "Mastering Web Development",
     category: "Books",
-    description: "A breathtaking space-opera adventure. Author Caleb Mercer weaves a rich tale of exploration, politics, and survival as a lone scout ship discovers an ancient artificial star capable of reshaping humanity's fate in the cosmos.",
-    price: 14.99,
-    rating: 4.5,
-    reviewsCount: 42,
-    stock: 15,
-    image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=80",
+    description:
+      "A complete guide to HTML, CSS, JavaScript, React, and modern web development practices.",
+    price: 29.99,
+    rating: 4.8,
+    reviewsCount: 280,
+    stock: 20,
+    image:
+      "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Format": "Paperback / Kindle / Audiobook",
-      "Pages": "482 Pages",
-      "Publisher": "Cosmic Press (2024)",
-      "Language": "English"
+      Pages: "520",
+      Language: "English",
+      Publisher: "TechPress",
+      Format: "Paperback",
     },
-    featured: false
+    featured: true,
   },
+
   {
     id: "book-2",
-    name: "Atomic Habitats: Peak Productivity",
+    name: "Artificial Intelligence Basics",
     category: "Books",
-    description: "Build tiny habits, achieve massive success. In this groundbreaking guide, performance psychologist Dr. Elena Vance reveals actionable, science-backed strategies for modifying environments to automate positive daily routines and break negative loops.",
-    price: 18.99,
-    rating: 4.8,
-    reviewsCount: 320,
-    stock: 20,
-    image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80",
+    description:
+      "Learn AI, Machine Learning, and Deep Learning concepts with practical real-world examples.",
+    price: 34.99,
+    rating: 4.7,
+    reviewsCount: 198,
+    stock: 16,
+    image:
+      "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Format": "Hardcover",
-      "Pages": "320 Pages",
-      "Genre": "Self-Help / Psychology",
-      "Best Seller List": "#1 Business & Productivity Guide"
+      Pages: "460",
+      Language: "English",
+      Publisher: "AI Publications",
+      Format: "Hardcover",
     },
-    featured: true
+    featured: false,
   },
+
   {
     id: "book-3",
-    name: "The Forgotten Realm: Illustrated Fantasy",
+    name: "Modern UI/UX Design",
     category: "Books",
-    description: "Delve into the realm of magic. This deluxe hardbound collection includes 40 hand-drawn detailed maps and illustrations accompanying an epic narrative of a fallen king navigating deep forests and forgotten ruins to reclaim a lost legacy.",
-    price: 28.50,
+    description:
+      "Learn professional UI/UX design principles, Figma workflows, color theory, and responsive design.",
+    price: 26.99,
     rating: 4.9,
-    reviewsCount: 55,
-    stock: 6,
-    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80",
+    reviewsCount: 170,
+    stock: 14,
+    image:
+      "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=80",
     specs: {
-      "Format": "Hardcover (Collector's Edition)",
-      "Pages": "380 Pages (Heavyweight Matte Paper)",
-      "Artwork": "40 Original Pen-and-Ink Illustrations",
-      "Extras": "Gold Foil Detailing on Spine & Cover"
+      Pages: "410",
+      Language: "English",
+      Publisher: "Creative Studio",
+      Format: "Paperback",
     },
-    featured: false
-  }
+    featured: true,
+  },
 ];

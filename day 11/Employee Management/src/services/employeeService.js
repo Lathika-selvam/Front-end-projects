@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const API_URL = "https://6a4c8355e1cf82a4a17d1f13.mockapi.io/employees";
-
 export const getEmployees = async () => {
   const response = await axios.get(API_URL);
   return response.data;

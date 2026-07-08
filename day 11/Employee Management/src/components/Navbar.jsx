@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaUsers, FaHome, FaChartBar, FaUserPlus } from "react-icons/fa";
 import "../styles/Navbar.css";
-import ThemeToggle from "./ThemeToggle";
 
 function Navbar() {
   return (
@@ -52,7 +51,6 @@ function Navbar() {
           </NavLink>
         </li>
       </ul>
-      <ThemeToggle />
     </nav>
   );
 }

@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import Navbar from "./components/Navbar";
 
-
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Employees from "./pages/Employees";
@@ -23,7 +22,6 @@ function App() {
         <Route path="/edit/:id" element={<EditEmployee />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      
     </>
   );
 }

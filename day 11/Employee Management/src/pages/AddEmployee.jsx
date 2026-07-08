@@ -2,10 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { addEmployee } from "../services/employeeService";
-await addActivity({
-  message: `✅ ${employee.name} added to ${employee.department} Department`,
-  time: new Date().toLocaleString(),
-});
 import "../styles/AddEmployee.css";
 
 function AddEmployee() {

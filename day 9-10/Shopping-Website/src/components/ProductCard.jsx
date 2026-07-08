@@ -10,13 +10,13 @@ export const ProductCard = ({ product }) => {
   const favorited = isInWishlist(product.id);
 
   const handleWishlistToggle = (e) => {
-    e.preventDefault(); // Stop navigation to details page
+    e.preventDefault(); 
     e.stopPropagation();
     toggleWishlist(product);
   };
 
   const handleAddToCart = (e) => {
-    e.preventDefault(); // Stop navigation to details page
+    e.preventDefault(); 
     e.stopPropagation();
     addToCart(product, 1);
   };
