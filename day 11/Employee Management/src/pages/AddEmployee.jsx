@@ -14,7 +14,6 @@ function AddEmployee() {
     designation: "",
     salary: "",
     phone: "",
-    image: "",
   });
 
   const handleChange = (e) => {
@@ -26,8 +25,43 @@ function AddEmployee() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (employee.name.trim() === "") {
+      Swal.fire("Error!", "Please enter employee name", "error");
+      return;
+    }
+
+    if (!/^[A-Za-z ]+$/.test(employee.name)) {
+      Swal.fire("Error!", "Name should contain only letters", "error");
+      return;
+    }
+
+    if (employee.email.trim() === "") {
+      Swal.fire("Error!", "Please enter email", "error");
+      return;
+    }
+
+    if (employee.department.trim() === "") {
+      Swal.fire("Error!", "Please enter department", "error");
+      return;
+    }
+
+    if (employee.designation.trim() === "") {
+      Swal.fire("Error!", "Please enter designation", "error");
+      return;
+    }
+
+    if (employee.salary === "" || Number(employee.salary) < 1000) {
+      Swal.fire("Error!", "Salary must be at least 1000", "error");
+      return;
+    }
+
     if (!/^\d{10}$/.test(employee.phone)) {
-      alert("Phone number must contain exactly 10 digits");
+      Swal.fire(
+        "Error!",
+        "Phone number must contain exactly 10 digits",
+        "error",
+      );
       return;
     }
 
@@ -48,6 +82,7 @@ function AddEmployee() {
         title: "Error!",
         text: "Failed to add employee",
       });
+
       console.log(error);
     }
   };
@@ -82,6 +117,7 @@ function AddEmployee() {
             type="text"
             name="department"
             placeholder="Department"
+            value={employee.department}
             onChange={handleChange}
             required
           />
@@ -90,6 +126,7 @@ function AddEmployee() {
             type="text"
             name="designation"
             placeholder="Designation"
+            value={employee.designation}
             onChange={handleChange}
             required
           />
@@ -107,20 +144,11 @@ function AddEmployee() {
           <input
             type="tel"
             name="phone"
-            placeholder="Phone"
+            placeholder="Phone Number"
             value={employee.phone}
             onChange={handleChange}
             pattern="[0-9]{10}"
             title="Phone number must contain exactly 10 digits"
-            required
-          />
-
-          <input
-            type="url"
-            name="image"
-            placeholder="Image URL"
-            value={employee.image}
-            onChange={handleChange}
             required
           />
 

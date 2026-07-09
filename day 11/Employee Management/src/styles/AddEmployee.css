@@ -39,8 +39,8 @@
 }
 
 .employee-form input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+  border-color: #4b5563;
+  box-shadow: 0 0 0 4px rgba(75, 85, 99, 0.15);
 }
 
 .employee-form button {
@@ -48,7 +48,7 @@
   padding: 15px;
   border: none;
   border-radius: 12px;
-  background: #2563eb;
+  background: #4b5563;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -57,7 +57,7 @@
 }
 
 .employee-form button:hover {
-  background: #1d4ed8;
+  background: #374151;
   transform: translateY(-2px);
 }
 

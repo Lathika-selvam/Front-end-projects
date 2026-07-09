@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 14px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: #374151;
   color: white;
   font-size: 22px;
 }
@@ -64,15 +64,14 @@
 }
 
 .nav-links a:hover {
-  background: #eff6ff;
-
-  color: #2563eb;
+  background: #f3f4f6;
+  color: #374151;
 
   transform: translateY(-2px);
 }
 
 .active {
-  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  background: #4b5563;
 
   color: white !important;
 

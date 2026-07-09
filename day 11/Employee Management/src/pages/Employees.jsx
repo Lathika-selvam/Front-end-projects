@@ -6,9 +6,10 @@ import { getEmployees, deleteEmployee } from "../services/employeeService";
 
 import "../styles/Employees.css";
 import Swal from "sweetalert2";
-
+import { FaUserCircle } from "react-icons/fa";
 function Employees() {
   const [employees, setEmployees] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetchEmployees();
@@ -58,6 +59,14 @@ function Employees() {
       }
     }
   };
+  const filteredEmployees = employees.filter((employee) => {
+    return (
+      employee.name.toLowerCase().includes(search.toLowerCase()) ||
+      employee.email.toLowerCase().includes(search.toLowerCase()) ||
+      employee.department.toLowerCase().includes(search.toLowerCase()) ||
+      employee.designation.toLowerCase().includes(search.toLowerCase())
+    );
+  });
   return (
     <div className="employees-page">
       <div className="employees-header">
@@ -72,7 +81,12 @@ function Employees() {
       </div>
 
       <div className="search-box">
-        <input type="text" placeholder="🔍 Search employees..." />
+        <input
+          type="text"
+          placeholder="🔍 Search employees..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </div>
 
       <table className="employee-table">
@@ -93,14 +107,11 @@ function Employees() {
         </thead>
 
         <tbody>
-          {employees.map((employee) => (
+          {filteredEmployees.map((employee) => (
             <tr key={employee.id}>
               <td>
                 <div className="employee-info">
-                  <img
-                    src={`https://api.dicebear.com/7.x/initials/svg?seed=${employee.name}`}
-                    alt={employee.name}
-                  />
+                  <FaUserCircle className="profile-icon" />
 
                   <div>
                     <h4>{employee.name}</h4>
