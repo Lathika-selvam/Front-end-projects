@@ -1,0 +1,299 @@
+.add-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 50px 20px;
+}
+
+.add-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+.employee-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.add-container h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #1e293b;
+  font-size: 34px;
+  font-weight: 700;
+}
+.employee-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.employee-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+}
+.employees-page {
+  padding: 50px;
+}
+
+.employees-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.employees-header h1 {
+  font-size: 40px;
+
+  margin-bottom: 8px;
+
+  color: #0f172a;
+}
+
+.employees-header p {
+  color: #64748b;
+}
+
+.add-btn {
+  padding: 15px 28px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #4b5563;
+
+  color: white;
+
+  font-weight: 600;
+
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
+}
+
+.search-box {
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  width: 100%;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background: white;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  font-size: 16px;
+
+  outline: none;
+}
+.employee-table-container {
+  overflow-x: auto;
+  border-radius: 20px;
+}
+
+.employee-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.employee-table thead {
+  background: linear-gradient(135deg, #e5eb25, #3b82f6);
+}
+
+.employee-table th {
+  padding: 20px;
+
+  color: white;
+
+  text-align: left;
+}
+
+.employee-table td {
+  padding: 20px;
+
+  border-bottom: 1px solid #edf2f7;
+}
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-icon {
+  font-size: 55px;
+  color: #6b7280;
+}
+
+.employee-info h4 {
+  margin-bottom: 5px;
+}
+
+.employee-info span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.department {
+  padding: 8px 15px;
+  border-radius: 30px;
+  background: #ecfdf5;
+  color: #059669;
+  font-weight: 600;
+}
+
+.edit-btn {
+  background: #4b5563;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn:hover {
+  background: #4b5563;
+  transform: none;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  transform: none;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+.employee-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  background: #fafcff;
+}
+
+.employee-form input:focus {
+  border-color: #4b5563;
+  box-shadow: 0 0 0 4px rgba(75, 85, 99, 0.15);
+}
+.employee-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dbe4f0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  background: #fafcff;
+}
+
+.employee-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.employee-form button {
+  grid-column: span 2;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: #4b5563;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.employee-form button:hover {
+  background: #374151;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .employee-form {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-form button {
+    grid-column: span 1;
+  }
+
+  .add-container {
+    padding: 25px;
+  }
+  .field-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+  }
+}
+.employee-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}

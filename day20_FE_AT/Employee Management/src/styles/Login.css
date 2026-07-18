@@ -1,0 +1,112 @@
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f5ff, #e6f7f5);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-box {
+  width: 450px;
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #5b4b8a;
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.login-box h3 {
+  text-align: center;
+  color: #7b7b8a;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.login-box select,
+.login-box input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid #d6d6e7;
+  border-radius: 12px;
+  outline: none;
+  font-size: 15px;
+  background: #fafafa;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.login-box select:hover,
+.login-box input:hover {
+  border-color: #8a7bc8;
+}
+
+.login-box select:focus,
+.login-box input:focus {
+  border-color: #5b4b8a;
+  box-shadow: 0 0 0 4px rgba(91, 75, 138, 0.15);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 15px;
+  background: #4fa89b;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #3f8f84;
+}
+
+.password-box {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.password-box input {
+  margin-bottom: 0;
+  padding-right: 50px;
+}
+
+.show-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+.show-password:hover {
+  color: #5b4b8a;
+}
+
+.login-box {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
